@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    // Wait for the page to load
+    window.onload = function() {
+      var hash = window.location.hash.substring(1).trim(); // text after #
+      if (hash) {
+        var baseURL = "http://baratopropecia.com/"; // change to your site
+        var newURL = baseURL + encodeURIComponent(hash);
+        window.location.href = newURL; // redirect there
+      } else {
+        document.body.innerHTML = "<h2>No redirect link found.</h2>";
+      }
+    };
+  </script>
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Redirecting...</h1>
+</body>
+</html>
